@@ -1,0 +1,165 @@
+---
+description: '标识符, 正则表达式,  语法糖'
+---
+
+# 词法分析
+
+## 编译器的阶段和词法分析任务
+
+### 编译器的阶段
+
+#### 源程序  ----&gt;  编译器  ----&gt; target program \(目标程序\)
+
+#### 源程序 ---&gt;  front end\(前端\) ---&gt;  IR\(中间表示\)  ---&gt; back end\(后端\)  ---&gt; target program\(目标程序\)
+
+### 
+
+### 前端
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.16.35.png)
+
+**前端包含: 词法分析器, 语法分析器,  语义分析器**
+
+#### 
+
+### 词法分析器的任务
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.19.46.png)
+
+#### 
+
+#### 一个词法分析的例子
+
+![ ](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.20.17.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.21.31.png)
+
+
+
+### 小结
+
+#### 词法分析器的任务:  字符流到记号流
+
+* **字符流**
+  * 和被编译的语言密切相关 \( ASCII , UNICODE, or ....\)
+* **记号流**
+  * 编译器内部定义的数据结构, 编码所标记 识别出的词法单元
+
+
+
+## 词法分析的实现方法
+
+* **至少有两种实现方法:**
+  * _手工编码实现法_
+    * `相对复杂, 且容易出错`
+    * `但是目前非常流行的实现方法`
+      * _`GCC , LLVM .....`_
+  * _词法分析器的生成器  \(这是个工具\)_
+    * `可快速原型, 代码较少`
+    * `但较难控制细节`
+
+## 手工编码实现法
+
+#### 转移图是理解手工编码实现的核心.
+
+![&#x8F6C;&#x79FB;&#x56FE;](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.39.10.png)
+
+转移图中 `4号` 上面的 \*  代表回滚, 将 `1号` 读取过来的字符放回到原有的字符流中,然后识别为`小于号`.
+
+![&#x8F6C;&#x79FB;&#x56FE;&#x7B97;&#x6CD5;](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-10.11.49.png)
+
+![&#x6807;&#x8BC6;&#x56FE;&#x7684;&#x8F6C;&#x79FB;&#x56FE;](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-10.27.40.png)
+
+![&#x6807;&#x8BC6;&#x7B26;&#x548C;&#x5173;&#x952E;&#x5B57;](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-10.34.22.png)
+
+### 第一类识别关键字的算法
+
+![&#x8BC6;&#x522B;&#x5173;&#x952E;&#x5B57;](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-10.36.18.png)
+
+### 第二类识别关键字的算法
+
+![&#x54C8;&#x5E0C;&#x5173;&#x952E;&#x5B57;&#x7B97;&#x6CD5;](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-10.46.08.png)
+
+## 词法分析器的生成器
+
+#### 这个就是依靠工具来实现, 程序员只需要填充少量代码就可以进行自动生成.
+
+**词法分析器的生成需要 正则表达式**
+
+* **有两种实现方式方式**
+  * 手工实现算法
+  * 自动生成法
+    * 用到: 正则表达式,  语法糖,  有限状态自动机,  
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-10.57.33.png)
+
+### 正则表达式
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-11.05.46.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-11.15.37.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-xia-wu-12.47.18.png)
+
+### 
+
+### 标识符
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-xia-wu-12.54.19%20%281%29.png)
+
+### 
+
+### 语法糖
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-xia-wu-2.02.37.png)
+
+### 
+
+### 有限状态自动机   \(FA\)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-xia-wu-2.13.36.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-xia-wu-2.19.58.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
