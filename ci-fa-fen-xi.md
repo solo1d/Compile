@@ -177,7 +177,15 @@ description: '标识符, 正则表达式,  语法糖'
 
 ### DFA 最小化算法 \(作用于 DFA,相当于压缩\)
 
-![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-11.53.54.png)
+![&#x7B97;&#x6CD5;&#x601D;&#x60F3;](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-11.53.54.png)
+
+![Hopcroft&#x7B97;&#x6CD5;](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-2.57.30.png)
+
+![Hopcroft &#x7B97;&#x6CD5;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-3.12.06.png)
+
+
+
+
 
 
 
