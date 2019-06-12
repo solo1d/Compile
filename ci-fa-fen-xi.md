@@ -115,7 +115,9 @@ description: '标识符, 正则表达式,  语法糖'
 
 ### 
 
-### 有限状态自动机   \(FA\)
+### 有限状态自动机   \(FA, DFA, NFA\)
+
+#### 确定有限状态自动机 DFA
 
 ![](.gitbook/assets/ping-mu-kuai-zhao-20190611-xia-wu-2.13.36.png)
 
@@ -123,13 +125,19 @@ description: '标识符, 正则表达式,  语法糖'
 
 
 
+#### 非确定有限状态自动机  NFA
 
+![&#x975E;&#x786E;&#x5B9A;&#x6709;&#x9650;&#x72B6;&#x6001;&#x81EA;&#x52A8;&#x673A;](.gitbook/assets/ping-mu-kuai-zhao-20190611-xia-wu-5.54.59.png)
 
+**有限状态自动机DFA 比 非确定有限状态自动机NFA 更加容易进行判断, 一般情况下需要将 NFA 转换成 DFA 来进行判断** 
 
+### 有限自动状态机小结
 
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-8.59.38.png)
 
+### 有限状态自动机 DFA 的实现
 
-
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-9.09.19.png)
 
 
 
