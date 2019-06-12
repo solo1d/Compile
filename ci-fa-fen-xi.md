@@ -30,7 +30,7 @@ description: '标识符, 正则表达式,  语法糖'
 
 #### 一个词法分析的例子
 
-![ ](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.20.17.png)
+![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.20.17.png)
 
 ![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.21.31.png)
 
@@ -93,7 +93,7 @@ description: '标识符, 正则表达式,  语法糖'
 
 ![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-10.57.33.png)
 
-### 正则表达式
+### 正则表达式 \( RE \)
 
 ![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-11.05.46.png)
 
@@ -141,13 +141,43 @@ description: '标识符, 正则表达式,  语法糖'
 
 
 
+### ER 转换到 NFA \(正则表达式到非确定有限状态自动机的转换算法\)
 
+ **正则表达式ER ---&gt;  NFA  ---&gt;  DFA  ---&gt;  词法分析器代码**
 
+![&#x6574;&#x4E2A;&#x6D41;&#x7A0B;](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-9.17.52.png)
 
+#### RE --&gt; NFA 过程的算法  Thompson算法
 
+![&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; &#x5230; &#x6709;&#x9650;&#x786E;&#x5B9A;&#x81EA;&#x52A8;&#x673A;&#x7684;&#x8F6C;&#x6362;](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-9.24.12.png)
 
+![&#x7B97;&#x6CD5;&#x7684;&#x5177;&#x4F53;&#x6784;&#x9020;&#x8FC7;&#x7A0B;](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-9.32.05.png)
 
+![&#x8F6C;&#x6362;&#x8FC7;&#x7A0B;](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-9.36.20.png)
 
+#### 结合性顺序: 括号的优先级最高, 然后是闭包 , 随后是链接
+
+![a\(b\|c\)\*   NFA&#x975E;&#x786E;&#x5B9A;&#x6709;&#x9650;&#x72B6;&#x6001;&#x81EA;&#x52A8;&#x673A;](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-9.42.27.png)
+
+### 
+
+### NFA 转换到  DFA   \(非确定转换到确定  有限自动机 算法\)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-10.20.53.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-10.36.59.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-10.44.47.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-10.46.19.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-11.01.30.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-11.10.26.png)
+
+### DFA 最小化算法 \(作用于 DFA,相当于压缩\)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-shang-wu-11.53.54.png)
 
 
 
