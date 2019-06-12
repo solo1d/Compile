@@ -183,15 +183,37 @@ description: '标识符, 正则表达式,  语法糖'
 
 ![Hopcroft &#x7B97;&#x6CD5;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-3.12.06.png)
 
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-3.19.28.png)
 
+### 
 
+### DFA 生成分析算法 \(代码表示\)
 
+**DFA代码表示, 将前面得到的状态积转变成一个最终能够实际运行的代码,从而制造一个词法分析器**
 
+#### DFA 的代码表示
 
+* 概念上讲, DFA是一个有向图
+* 实际上, 有不同的 DFA 的代码表示
+  * **转移表 \(类似于邻接矩阵\)**
+  * **哈希表**
+  * **跳转表**  _**&lt;效率比转移表高一些,内存占用相对少一些&gt;**_
+  * ......等等 各种形式
+* 取决于在实际实现中, 对时间空间的权衡
 
+_**转移表**_
 
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-4.15.07.png)
 
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-4.14.12.png)
 
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-4.23.26.png)
+
+_\*\*\*\*_
+
+_**跳转表**_
+
+![](.gitbook/assets/ping-mu-kuai-zhao-20190612-xia-wu-5.48.23.png)
 
 
 
