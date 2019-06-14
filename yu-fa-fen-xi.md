@@ -157,10 +157,142 @@
 
 ### LL\(1\)  分析算法
 
+#### 简化的分析和实现
+
 ![&#x7B97;&#x6CD5;&#x5206;&#x6790;&#x7684;&#x57FA;&#x672C;&#x601D;&#x60F3;](.gitbook/assets/ping-mu-kuai-zhao-2019061321.01.41.png)
 
 ![&#x67B6;&#x6784;](.gitbook/assets/ping-mu-kuai-zhao-2019061321.03.32.png)
 
+![&#x5206;&#x6790;&#x8868;](.gitbook/assets/ping-mu-kuai-zhao-2019061410.42.36.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061410.53.51%20%281%29.png)
+
+![&#x5206;&#x6790;&#x8868;](.gitbook/assets/ping-mu-kuai-zhao-2019061411.00.11.png)
+
+#### LL\(1\) 分析表的冲突
+
+![&#x5B58;&#x5728;&#x51B2;&#x7A81;&#x7684;&#x4E00;&#x5F20;&#x5206;&#x6790;&#x8868; , &#x4EE3;&#x8868;&#x4E0D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; LL\(1\)&#x5206;&#x6790;&#x7B97;&#x6CD5;](.gitbook/assets/ping-mu-kuai-zhao-2019061411.04.02.png)
+
+####  一般条件下的 LL\(1\) 分析表构造算法
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.16.59.png)
+
+
+
+#### NULLABLE集合计算
+
+![NULLABLE&#x96C6;&#x5408;](.gitbook/assets/ping-mu-kuai-zhao-2019061411.19.24.png)
+
+![NULLABLE&#x96C6;&#x5408;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;](.gitbook/assets/ping-mu-kuai-zhao-2019061411.22.49.png)
+
+#### FIRST集合计公式
+
+![FIRST&#x96C6;&#x5408;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;](.gitbook/assets/ping-mu-kuai-zhao-2019061411.25.35%20%281%29.png)
+
+![FIRST&#x96C6;&#x7684;&#x4E0D;&#x52A8;&#x70B9;&#x7B97;&#x6CD5;](.gitbook/assets/ping-mu-kuai-zhao-2019061410.53.51.png)
+
+![&#x7B97;&#x6CD5;&#x5B9E;&#x4F8B;](.gitbook/assets/ping-mu-kuai-zhao-2019061411.31.38.png)
+
+#### FOLLOW 集的不动点算法
+
+![&#x4ECE;&#x540E;&#x5411;&#x524D;&#x505A;&#x8FED;&#x4EE3;](.gitbook/assets/ping-mu-kuai-zhao-2019061411.36.40.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.40.21.png)
+
+#### 计算FIRST\_S 集合
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.47.57.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.48.51.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.49.18.png)
+
+### 语法分析  驱动代码
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.51.16.png)
+
+### LL\(1\) 分析处理冲突处理
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.54.03.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.54.32.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.55.08.png)
+
+### \*\*\*\*
+
+### **自底向上分析算法**
+
+* **研究其中最重要爷是最广泛应用的一类**
+  * **LR 分析算法 \(移进 - 归约算法\)**
+    * **算法运行高效**
+    * **有现成的工具可用**
+  * **这也是目前采用广泛的一列语法分析器的自动生成器中采用的算法**
+    * **YACC, bison, CUP , C\# yacc, 等等**
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061412.04.34.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.57.14.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061412.19.53.png)
+
+### **点记号**
+
+![&#x5DF2;&#x7ECF;&#x8BFB;&#x5165;&#x7684;&#x662F;&#x5408;&#x6CD5;&#x7684;, &#x5269;&#x4F59;&#x7684;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x5408;&#x6CD5;&#x7684;](.gitbook/assets/ping-mu-kuai-zhao-2019061412.05.46.png)
+
+![&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x5199;&#x6CD5;](.gitbook/assets/ping-mu-kuai-zhao-2019061412.07.28.png)
+
+![&#x53E6;&#x4E00;&#x79CD; &#x6808;  &#x7ED3;&#x6784;&#x5199;&#x6CD5;](.gitbook/assets/ping-mu-kuai-zhao-2019061412.17.31.png)
+
+
+
+### LR\(0\) 分析算法
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061411.57.14.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.31.33.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.36.29.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.37.59.png)
+
+### LR\(0\) 算法思想
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.25.35.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.29.34.png)
+
+### 
+
+### SLR 分析算法
+
+**是根据LR\(0\) 算法的一个改进**
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.40.21.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.43.45.png)
+
+### 
+
+### LR\(1\) 分析算法
+
+**根据LR\(0\) 算法改进的另一个算法, 这个算法避免了 `SLR分析表` 中的冲突情况.**
+
+**LR\(1\) 和 LR\(0\) 的区别就是 `闭包` 算法不同.**
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.46.12.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.47.56.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.51.09.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.52.35.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.54.06.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.54.43.png)
+
+![](.gitbook/assets/ping-mu-kuai-zhao-2019061413.55.59.png)
 
 
 
@@ -173,11 +305,6 @@
 
 
 
-
-
-
-
-\*\*\*\*
 
 
 
