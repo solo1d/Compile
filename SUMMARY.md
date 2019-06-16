@@ -10,4 +10,5 @@
 * [符号表](fu-hao-biao.md)
 * [中间端和后端](zhong-jian-duan-he-hou-duan.md)
 * [代码生成](dai-ma-sheng-cheng.md)
+* [中间表示](zhong-jian-biao-shi.md)
 
