@@ -12,7 +12,7 @@ description: '标识符, 正则表达式,  语法糖'
 
 #### 源程序 ---&gt;  front end\(前端\) ---&gt;  IR\(中间表示\)  ---&gt; back end\(后端\)  ---&gt; target program\(目标程序\)
 
-### 
+
 
 ### 前端
 
@@ -20,13 +20,13 @@ description: '标识符, 正则表达式,  语法糖'
 
 **前端包含: 词法分析器, 语法分析器,  语义分析器**
 
-#### 
+
 
 ### 词法分析器的任务
 
 ![](.gitbook/assets/ping-mu-kuai-zhao-20190611-shang-wu-9.19.46.png)
 
-#### 
+
 
 #### 一个词法分析的例子
 
